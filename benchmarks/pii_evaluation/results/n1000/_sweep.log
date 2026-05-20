@@ -1,0 +1,119 @@
+==> §1 matrix sweep @ n=1000: 21 cells total
+==> output: benchmarks/pii_evaluation/results/n1000
+
+=== dataset: ai4privacy_de (raw_limit=3000, opf_model=de) ===
+[1/21] regex_only
+  [skip] benchmarks/pii_evaluation/results/n1000/imported_eval_ai4privacy_de__regex_only.md already exists
+[2/21] regex_presidio
+  [skip] benchmarks/pii_evaluation/results/n1000/imported_eval_ai4privacy_de__regex_presidio.md already exists
+[3/21] regex_opf__de
+  [skip] benchmarks/pii_evaluation/results/n1000/imported_eval_ai4privacy_de__regex_opf__de.md already exists
+[4/21] regex_llm__nvidia-nemotron-nano-9b-v2
+  [run]  regex_llm__nvidia-nemotron-nano-9b-v2  -> benchmarks/pii_evaluation/results/n1000/imported_eval_ai4privacy_de__regex_llm__nvidia-nemotron-nano-9b-v2.md
+         done -> - Elapsed: **313.1s** (313ms/row)
+[5/21] regex_llm__qwen-qwen3.5-9b
+  [skip] benchmarks/pii_evaluation/results/n1000/imported_eval_ai4privacy_de__regex_llm__qwen-qwen3.5-9b.md already exists
+[6/21] regex_llm__meta-llama-llama-3.2-3b-instruct
+  [skip] benchmarks/pii_evaluation/results/n1000/imported_eval_ai4privacy_de__regex_llm__meta-llama-llama-3.2-3b-instruct.md already exists
+[7/21] regex_llm__mistralai-ministral-3b-2512
+  [skip] benchmarks/pii_evaluation/results/n1000/imported_eval_ai4privacy_de__regex_llm__mistralai-ministral-3b-2512.md already exists
+
+=== dataset: wolframko_ru (raw_limit=3600, opf_model=ru) ===
+[8/21] regex_only
+  [skip] benchmarks/pii_evaluation/results/n1000/imported_eval_wolframko_ru__regex_only.md already exists
+[9/21] regex_presidio
+  [skip] benchmarks/pii_evaluation/results/n1000/imported_eval_wolframko_ru__regex_presidio.md already exists
+[10/21] regex_opf__ru
+  [skip] benchmarks/pii_evaluation/results/n1000/imported_eval_wolframko_ru__regex_opf__ru.md already exists
+[11/21] regex_llm__nvidia-nemotron-nano-9b-v2
+  [run]  regex_llm__nvidia-nemotron-nano-9b-v2  -> benchmarks/pii_evaluation/results/n1000/imported_eval_wolframko_ru__regex_llm__nvidia-nemotron-nano-9b-v2.md
+         done -> - Elapsed: **309.6s** (310ms/row)
+[12/21] regex_llm__qwen-qwen3.5-9b
+  [run]  regex_llm__qwen-qwen3.5-9b  -> benchmarks/pii_evaluation/results/n1000/imported_eval_wolframko_ru__regex_llm__qwen-qwen3.5-9b.md
+         done -> - Elapsed: **7120.0s** (7120ms/row)
+[13/21] regex_llm__meta-llama-llama-3.2-3b-instruct
+  [run]  regex_llm__meta-llama-llama-3.2-3b-instruct  -> benchmarks/pii_evaluation/results/n1000/imported_eval_wolframko_ru__regex_llm__meta-llama-llama-3.2-3b-instruct.md
+         done -> - Elapsed: **528.1s** (528ms/row)
+[14/21] regex_llm__mistralai-ministral-3b-2512
+  [run]  regex_llm__mistralai-ministral-3b-2512  -> benchmarks/pii_evaluation/results/n1000/imported_eval_wolframko_ru__regex_llm__mistralai-ministral-3b-2512.md
+         done -> - Elapsed: **681.8s** (682ms/row)
+
+=== dataset: nemotron_en (raw_limit=5000, opf_model=en) ===
+[15/21] regex_only
+  [run]  regex_only  -> benchmarks/pii_evaluation/results/n1000/imported_eval_nemotron_en__regex_only.md
+         done -> - Elapsed: **0.3s** (0ms/row)
+[16/21] regex_presidio
+  [run]  regex_presidio  -> benchmarks/pii_evaluation/results/n1000/imported_eval_nemotron_en__regex_presidio.md
+         done -> - Elapsed: **40.9s** (41ms/row)
+[17/21] regex_opf__en
+  [run]  regex_opf__en  -> benchmarks/pii_evaluation/results/n1000/imported_eval_nemotron_en__regex_opf__en.md
+         done -> - Elapsed: **7589.7s** (7590ms/row)
+[18/21] regex_llm__nvidia-nemotron-nano-9b-v2
+  [run]  regex_llm__nvidia-nemotron-nano-9b-v2  -> benchmarks/pii_evaluation/results/n1000/imported_eval_nemotron_en__regex_llm__nvidia-nemotron-nano-9b-v2.md
+         done -> - Elapsed: **400.5s** (401ms/row)
+[19/21] regex_llm__qwen-qwen3.5-9b
+  [run]  regex_llm__qwen-qwen3.5-9b  -> benchmarks/pii_evaluation/results/n1000/imported_eval_nemotron_en__regex_llm__qwen-qwen3.5-9b.md
+         done -> - Elapsed: **1183.5s** (1183ms/row)
+[20/21] regex_llm__meta-llama-llama-3.2-3b-instruct
+  [run]  regex_llm__meta-llama-llama-3.2-3b-instruct  -> benchmarks/pii_evaluation/results/n1000/imported_eval_nemotron_en__regex_llm__meta-llama-llama-3.2-3b-instruct.md
+         done -> - Elapsed: **1009.4s** (1009ms/row)
+[21/21] regex_llm__mistralai-ministral-3b-2512
+  [run]  regex_llm__mistralai-ministral-3b-2512  -> benchmarks/pii_evaluation/results/n1000/imported_eval_nemotron_en__regex_llm__mistralai-ministral-3b-2512.md
+         done -> - Elapsed: **722.2s** (722ms/row)
+
+==> sweep complete. Results in benchmarks/pii_evaluation/results/n1000
+==> §1 matrix sweep @ n=1000: 21 cells total
+==> output: benchmarks/pii_evaluation/results/n1000
+
+=== dataset: ai4privacy_de (raw_limit=3000, opf_model=de) ===
+[1/21] regex_only
+  [skip] benchmarks/pii_evaluation/results/n1000/imported_eval_ai4privacy_de__regex_only.md already exists
+[2/21] regex_presidio
+  [skip] benchmarks/pii_evaluation/results/n1000/imported_eval_ai4privacy_de__regex_presidio.md already exists
+[3/21] regex_opf__de
+  [skip] benchmarks/pii_evaluation/results/n1000/imported_eval_ai4privacy_de__regex_opf__de.md already exists
+[4/21] regex_llm__nvidia-nemotron-nano-9b-v2
+  [skip] benchmarks/pii_evaluation/results/n1000/imported_eval_ai4privacy_de__regex_llm__nvidia-nemotron-nano-9b-v2.md already exists
+[5/21] regex_llm__qwen-qwen3.5-9b
+  [skip] benchmarks/pii_evaluation/results/n1000/imported_eval_ai4privacy_de__regex_llm__qwen-qwen3.5-9b.md already exists
+[6/21] regex_llm__google-gemma-3-4b-it
+  [run]  regex_llm__google-gemma-3-4b-it  -> benchmarks/pii_evaluation/results/n1000/imported_eval_ai4privacy_de__regex_llm__google-gemma-3-4b-it.md
+         done -> - Elapsed: **1483.5s** (1483ms/row)
+[7/21] regex_llm__mistralai-ministral-3b-2512
+  [skip] benchmarks/pii_evaluation/results/n1000/imported_eval_ai4privacy_de__regex_llm__mistralai-ministral-3b-2512.md already exists
+
+=== dataset: wolframko_ru (raw_limit=3600, opf_model=ru) ===
+[8/21] regex_only
+  [skip] benchmarks/pii_evaluation/results/n1000/imported_eval_wolframko_ru__regex_only.md already exists
+[9/21] regex_presidio
+  [skip] benchmarks/pii_evaluation/results/n1000/imported_eval_wolframko_ru__regex_presidio.md already exists
+[10/21] regex_opf__ru
+  [skip] benchmarks/pii_evaluation/results/n1000/imported_eval_wolframko_ru__regex_opf__ru.md already exists
+[11/21] regex_llm__nvidia-nemotron-nano-9b-v2
+  [skip] benchmarks/pii_evaluation/results/n1000/imported_eval_wolframko_ru__regex_llm__nvidia-nemotron-nano-9b-v2.md already exists
+[12/21] regex_llm__qwen-qwen3.5-9b
+  [skip] benchmarks/pii_evaluation/results/n1000/imported_eval_wolframko_ru__regex_llm__qwen-qwen3.5-9b.md already exists
+[13/21] regex_llm__google-gemma-3-4b-it
+  [run]  regex_llm__google-gemma-3-4b-it  -> benchmarks/pii_evaluation/results/n1000/imported_eval_wolframko_ru__regex_llm__google-gemma-3-4b-it.md
+         done -> - Elapsed: **844.8s** (845ms/row)
+[14/21] regex_llm__mistralai-ministral-3b-2512
+  [skip] benchmarks/pii_evaluation/results/n1000/imported_eval_wolframko_ru__regex_llm__mistralai-ministral-3b-2512.md already exists
+
+=== dataset: nemotron_en (raw_limit=5000, opf_model=en) ===
+[15/21] regex_only
+  [skip] benchmarks/pii_evaluation/results/n1000/imported_eval_nemotron_en__regex_only.md already exists
+[16/21] regex_presidio
+  [skip] benchmarks/pii_evaluation/results/n1000/imported_eval_nemotron_en__regex_presidio.md already exists
+[17/21] regex_opf__en
+  [skip] benchmarks/pii_evaluation/results/n1000/imported_eval_nemotron_en__regex_opf__en.md already exists
+[18/21] regex_llm__nvidia-nemotron-nano-9b-v2
+  [skip] benchmarks/pii_evaluation/results/n1000/imported_eval_nemotron_en__regex_llm__nvidia-nemotron-nano-9b-v2.md already exists
+[19/21] regex_llm__qwen-qwen3.5-9b
+  [skip] benchmarks/pii_evaluation/results/n1000/imported_eval_nemotron_en__regex_llm__qwen-qwen3.5-9b.md already exists
+[20/21] regex_llm__google-gemma-3-4b-it
+  [run]  regex_llm__google-gemma-3-4b-it  -> benchmarks/pii_evaluation/results/n1000/imported_eval_nemotron_en__regex_llm__google-gemma-3-4b-it.md
+         done -> - Elapsed: **975.4s** (975ms/row)
+[21/21] regex_llm__mistralai-ministral-3b-2512
+  [skip] benchmarks/pii_evaluation/results/n1000/imported_eval_nemotron_en__regex_llm__mistralai-ministral-3b-2512.md already exists
+
+==> sweep complete. Results in benchmarks/pii_evaluation/results/n1000

@@ -1,0 +1,199 @@
+# Imported-dataset eval - nemotron_en
+
+- Rows evaluated: **1,000**
+- Rows with zero gold spans (after label-map filter): **0**
+- Elapsed: **1183.5s** (1183ms/row)
+- Projection-symmetric scoring: **on** (gold placeholder space: `[CARD], [DATE], [EMAIL], [IP], [LICENSE_PLATE], [PERSONAL_ID], [PERSON_NAME], [PHONE], [SECRET], [STREET_ADDRESS], [URL], [VIN]`)
+
+## Per-placeholder precision / recall
+
+| Placeholder | Precision (95% CI) | Recall (95% CI) | F1 (95% CI) | TP | FP | FN | Support |
+|---|---|---|---|---:|---:|---:|---:|
+| `[CARD]` | 0.588 [0.333, 0.857] | 1.000 [1.000, 1.000] | 0.741 [0.500, 0.923] | 10 | 7 | 0 | 10 |
+| `[DATE]` | 0.952 [0.914, 0.982] | 0.894 [0.855, 0.932] | 0.922 [0.894, 0.948] | 693 | 35 | 82 | 775 |
+| `[EMAIL]` | 0.997 [0.992, 1.000] | 1.000 [1.000, 1.000] | 0.999 [0.996, 1.000] | 388 | 1 | 0 | 388 |
+| `[IP]` | 0.964 [0.916, 1.000] | 0.973 [0.946, 0.995] | 0.968 [0.942, 0.993] | 213 | 8 | 6 | 219 |
+| `[LICENSE_PLATE]` | 0.957 [0.850, 1.000] | 0.667 [0.483, 0.840] | 0.786 [0.632, 0.906] | 22 | 1 | 11 | 33 |
+| `[PERSONAL_ID]` | 0.950 [0.868, 1.000] | 1.000 [1.000, 1.000] | 0.974 [0.930, 1.000] | 38 | 2 | 0 | 38 |
+| `[PERSON_NAME]` | 0.898 [0.859, 0.932] | 0.582 [0.523, 0.639] | 0.706 [0.660, 0.749] | 228 | 26 | 164 | 392 |
+| `[PHONE]` | 0.472 [0.413, 0.530] | 1.000 [1.000, 1.000] | 0.641 [0.584, 0.693] | 225 | 252 | 0 | 225 |
+| `[SECRET]` | 0.000 [0.000, 0.000] | 0.000 [0.000, 0.000] | 0.000 [0.000, 0.000] | 0 | 0 | 280 | 280 |
+| `[STREET_ADDRESS]` | 0.984 [0.946, 1.000] | 0.792 [0.695, 0.886] | 0.878 [0.815, 0.933] | 61 | 1 | 16 | 77 |
+| `[URL]` | 1.000 [1.000, 1.000] | 1.000 [1.000, 1.000] | 1.000 [1.000, 1.000] | 606 | 0 | 0 | 606 |
+| `[VIN]` | 1.000 [1.000, 1.000] | 1.000 [1.000, 1.000] | 1.000 [1.000, 1.000] | 14 | 0 | 0 | 14 |
+| **macro** | 0.813 [0.789, 0.839] | 0.826 [0.807, 0.844] | 0.819 [0.803, 0.834] | 2498 | 333 | 559 | 3057 |
+| **micro** | 0.882 [0.865, 0.899] | 0.817 [0.800, 0.834] | 0.849 [0.836, 0.861] | 2498 | 333 | 559 | 3057 |
+
+## Per-length-bucket precision / recall
+
+Row distribution across buckets: `sentence`: 324, `paragraph`: 26, `multi_paragraph`: 330, `structured`: 320
+
+### `sentence` (324 rows)
+
+| Placeholder | Precision (95% CI) | Recall (95% CI) | F1 (95% CI) | TP | FP | FN | Support |
+|---|---|---|---|---:|---:|---:|---:|
+| `[CARD]` | 0.667 [0.000, 1.000] | 1.000 [0.000, 1.000] | 0.800 [0.000, 1.000] | 2 | 1 | 0 | 2 |
+| `[DATE]` | 0.977 [0.951, 0.995] | 0.944 [0.911, 0.973] | 0.960 [0.938, 0.979] | 170 | 4 | 10 | 180 |
+| `[EMAIL]` | 1.000 [1.000, 1.000] | 1.000 [1.000, 1.000] | 1.000 [1.000, 1.000] | 93 | 0 | 0 | 93 |
+| `[IP]` | 1.000 [1.000, 1.000] | 0.963 [0.907, 1.000] | 0.981 [0.951, 1.000] | 52 | 0 | 2 | 54 |
+| `[LICENSE_PLATE]` | 1.000 [1.000, 1.000] | 0.600 [0.286, 0.889] | 0.750 [0.444, 0.941] | 6 | 0 | 4 | 10 |
+| `[PERSONAL_ID]` | 0.929 [0.750, 1.000] | 1.000 [1.000, 1.000] | 0.963 [0.857, 1.000] | 13 | 1 | 0 | 13 |
+| `[PERSON_NAME]` | 0.917 [0.866, 0.964] | 0.723 [0.633, 0.817] | 0.808 [0.745, 0.870] | 99 | 9 | 38 | 137 |
+| `[PHONE]` | 0.469 [0.390, 0.553] | 1.000 [1.000, 1.000] | 0.639 [0.561, 0.712] | 61 | 69 | 0 | 61 |
+| `[SECRET]` | 0.000 [0.000, 0.000] | 0.000 [0.000, 0.000] | 0.000 [0.000, 0.000] | 0 | 0 | 71 | 71 |
+| `[STREET_ADDRESS]` | 1.000 [1.000, 1.000] | 0.886 [0.767, 0.973] | 0.939 [0.868, 0.986] | 31 | 0 | 4 | 35 |
+| `[URL]` | 1.000 [1.000, 1.000] | 1.000 [1.000, 1.000] | 1.000 [1.000, 1.000] | 145 | 0 | 0 | 145 |
+| `[VIN]` | 1.000 [1.000, 1.000] | 1.000 [1.000, 1.000] | 1.000 [1.000, 1.000] | 6 | 0 | 0 | 6 |
+| **macro** | 0.830 [0.768, 0.867] | 0.843 [0.747, 0.870] | 0.836 [0.759, 0.860] | 678 | 84 | 129 | 807 |
+| **micro** | 0.890 [0.868, 0.911] | 0.840 [0.809, 0.870] | 0.864 [0.846, 0.883] | 678 | 84 | 129 | 807 |
+
+### `paragraph` (26 rows)
+
+| Placeholder | Precision (95% CI) | Recall (95% CI) | F1 (95% CI) | TP | FP | FN | Support |
+|---|---|---|---|---:|---:|---:|---:|
+| `[DATE]` | 1.000 [1.000, 1.000] | 0.846 [0.556, 1.000] | 0.917 [0.714, 1.000] | 11 | 0 | 2 | 13 |
+| `[EMAIL]` | 1.000 [1.000, 1.000] | 1.000 [1.000, 1.000] | 1.000 [1.000, 1.000] | 8 | 0 | 0 | 8 |
+| `[IP]` | 1.000 [1.000, 1.000] | 1.000 [1.000, 1.000] | 1.000 [1.000, 1.000] | 6 | 0 | 0 | 6 |
+| `[PERSONAL_ID]` | 1.000 [0.000, 1.000] | 1.000 [0.000, 1.000] | 1.000 [0.000, 1.000] | 1 | 0 | 0 | 1 |
+| `[PERSON_NAME]` | 1.000 [0.000, 1.000] | 0.500 [0.000, 1.000] | 0.667 [0.000, 1.000] | 2 | 0 | 2 | 4 |
+| `[PHONE]` | 0.600 [0.222, 0.900] | 1.000 [1.000, 1.000] | 0.750 [0.364, 0.947] | 6 | 4 | 0 | 6 |
+| `[SECRET]` | 0.000 [0.000, 0.000] | 0.000 [0.000, 0.000] | 0.000 [0.000, 0.000] | 0 | 0 | 7 | 7 |
+| `[STREET_ADDRESS]` | 1.000 [0.000, 1.000] | 1.000 [0.000, 1.000] | 1.000 [0.000, 1.000] | 2 | 0 | 0 | 2 |
+| `[URL]` | 1.000 [1.000, 1.000] | 1.000 [1.000, 1.000] | 1.000 [1.000, 1.000] | 17 | 0 | 0 | 17 |
+| **macro** | 0.844 [0.600, 0.873] | 0.816 [0.594, 0.889] | 0.830 [0.600, 0.866] | 53 | 4 | 11 | 64 |
+| **micro** | 0.930 [0.857, 0.985] | 0.828 [0.725, 0.918] | 0.876 [0.804, 0.932] | 53 | 4 | 11 | 64 |
+
+### `multi_paragraph` (330 rows)
+
+| Placeholder | Precision (95% CI) | Recall (95% CI) | F1 (95% CI) | TP | FP | FN | Support |
+|---|---|---|---|---:|---:|---:|---:|
+| `[CARD]` | 0.714 [0.333, 1.000] | 1.000 [1.000, 1.000] | 0.833 [0.500, 1.000] | 5 | 2 | 0 | 5 |
+| `[DATE]` | 0.980 [0.959, 0.995] | 0.882 [0.818, 0.932] | 0.928 [0.890, 0.957] | 194 | 4 | 26 | 220 |
+| `[EMAIL]` | 0.993 [0.978, 1.000] | 1.000 [1.000, 1.000] | 0.997 [0.989, 1.000] | 150 | 1 | 0 | 150 |
+| `[IP]` | 1.000 [1.000, 1.000] | 0.984 [0.949, 1.000] | 0.992 [0.974, 1.000] | 60 | 0 | 1 | 61 |
+| `[LICENSE_PLATE]` | 0.900 [0.636, 1.000] | 0.692 [0.375, 1.000] | 0.783 [0.500, 1.000] | 9 | 1 | 4 | 13 |
+| `[PERSONAL_ID]` | 1.000 [1.000, 1.000] | 1.000 [1.000, 1.000] | 1.000 [1.000, 1.000] | 10 | 0 | 0 | 10 |
+| `[PERSON_NAME]` | 0.906 [0.841, 0.964] | 0.513 [0.430, 0.604] | 0.655 [0.580, 0.731] | 77 | 8 | 73 | 150 |
+| `[PHONE]` | 0.504 [0.394, 0.608] | 1.000 [1.000, 1.000] | 0.670 [0.565, 0.757] | 68 | 67 | 0 | 68 |
+| `[SECRET]` | 0.000 [0.000, 0.000] | 0.000 [0.000, 0.000] | 0.000 [0.000, 0.000] | 0 | 0 | 95 | 95 |
+| `[STREET_ADDRESS]` | 1.000 [1.000, 1.000] | 0.760 [0.586, 0.917] | 0.864 [0.739, 0.957] | 19 | 0 | 6 | 25 |
+| `[URL]` | 1.000 [1.000, 1.000] | 1.000 [1.000, 1.000] | 1.000 [1.000, 1.000] | 243 | 0 | 0 | 243 |
+| `[VIN]` | 1.000 [0.000, 1.000] | 1.000 [0.000, 1.000] | 1.000 [0.000, 1.000] | 1 | 0 | 0 | 1 |
+| **macro** | 0.833 [0.716, 0.865] | 0.819 [0.705, 0.847] | 0.826 [0.716, 0.848] | 836 | 83 | 205 | 1041 |
+| **micro** | 0.910 [0.889, 0.931] | 0.803 [0.773, 0.831] | 0.853 [0.833, 0.872] | 836 | 83 | 205 | 1041 |
+
+### `structured` (320 rows)
+
+| Placeholder | Precision (95% CI) | Recall (95% CI) | F1 (95% CI) | TP | FP | FN | Support |
+|---|---|---|---|---:|---:|---:|---:|
+| `[CARD]` | 0.429 [0.000, 1.000] | 1.000 [0.000, 1.000] | 0.600 [0.000, 1.000] | 3 | 4 | 0 | 3 |
+| `[DATE]` | 0.922 [0.834, 0.977] | 0.878 [0.802, 0.943] | 0.900 [0.836, 0.947] | 318 | 27 | 44 | 362 |
+| `[EMAIL]` | 1.000 [1.000, 1.000] | 1.000 [1.000, 1.000] | 1.000 [1.000, 1.000] | 137 | 0 | 0 | 137 |
+| `[IP]` | 0.922 [0.838, 1.000] | 0.969 [0.914, 1.000] | 0.945 [0.894, 0.995] | 95 | 8 | 3 | 98 |
+| `[LICENSE_PLATE]` | 1.000 [1.000, 1.000] | 0.700 [0.250, 1.000] | 0.824 [0.400, 1.000] | 7 | 0 | 3 | 10 |
+| `[PERSONAL_ID]` | 0.933 [0.769, 1.000] | 1.000 [1.000, 1.000] | 0.966 [0.870, 1.000] | 14 | 1 | 0 | 14 |
+| `[PERSON_NAME]` | 0.847 [0.746, 0.933] | 0.495 [0.395, 0.603] | 0.625 [0.537, 0.710] | 50 | 9 | 51 | 101 |
+| `[PHONE]` | 0.446 [0.344, 0.548] | 1.000 [1.000, 1.000] | 0.616 [0.511, 0.708] | 90 | 112 | 0 | 90 |
+| `[SECRET]` | 0.000 [0.000, 0.000] | 0.000 [0.000, 0.000] | 0.000 [0.000, 0.000] | 0 | 0 | 107 | 107 |
+| `[STREET_ADDRESS]` | 0.900 [0.714, 1.000] | 0.600 [0.353, 0.889] | 0.720 [0.500, 0.903] | 9 | 1 | 6 | 15 |
+| `[URL]` | 1.000 [1.000, 1.000] | 1.000 [1.000, 1.000] | 1.000 [1.000, 1.000] | 201 | 0 | 0 | 201 |
+| `[VIN]` | 1.000 [1.000, 1.000] | 1.000 [1.000, 1.000] | 1.000 [1.000, 1.000] | 7 | 0 | 0 | 7 |
+| **macro** | 0.783 [0.739, 0.831] | 0.804 [0.728, 0.840] | 0.793 [0.733, 0.823] | 931 | 162 | 214 | 1145 |
+| **micro** | 0.852 [0.815, 0.886] | 0.813 [0.780, 0.845] | 0.832 [0.804, 0.856] | 931 | 162 | 214 | 1145 |
+
+
+## False-positive samples
+
+### `[CARD]`
+- `nemotron-en-6a5483ee6c5242009335acde1268695c` [regex] value=`234152987654321`  context: ...'cluding the device identifier 234152987654321. The analysis focused on user'...
+- `nemotron-en-2cb9c59167b2495e8fb8ad19a4db6cfc` [regex] value=`490154203237518`  context: ...'ing. The device identifier is 490154203237518, and the associated MAC addre'...
+- `nemotron-en-dd2c922f91dc4a73aa76440f23b0e155` [regex] value=`490154203237518`  context: ...'t        | Approved         | 490154203237518  | 185.210.12.53   | 2a03:5d2'...
+- `nemotron-en-ecfd93eae6964ba584d3ddf8c5c7174b` [regex] value=`302781123456790`  context: ...'     | **Device Identifier**: 302781123456790 |                     |      '...
+- `nemotron-en-fbb57bfa3fdb4e368170b2e839b01a82` [regex] value=`490154203237518`  context: ...'---|\n| Request ID           | 490154203237518                         |\n| C'...
+
+### `[DATE]`
+- `nemotron-en-d204231bd08a4f0896ce5cd125b79465` [regex] value=`12.34.56.78`  context: ...'k5. The VPN server address is 12.34.56.78. Please use the employee ID 2'...
+- `nemotron-en-d6acf3d8d0494e259f02e28be2d54a5f` [regex] value=`2024-01-16`  context: ...' Recruitment of Participants: 2024-01-16 to 2024-02-15\n- Implementatio'...
+- `nemotron-en-d6acf3d8d0494e259f02e28be2d54a5f` [regex] value=`2024-02-16`  context: ...'\n- Implementation of Program: 2024-02-16 to 2024-06-15\n- Evaluation an'...
+- `nemotron-en-d6acf3d8d0494e259f02e28be2d54a5f` [regex] value=`2024-06-16`  context: ...'5\n- Evaluation and Reporting: 2024-06-16 to 2024-07-15\n\n**Expected Out'...
+- `nemotron-en-3ef521773dfa4727888cf20ca3717871` [regex] value=`1310-73-2`  context: ...'ts: Sodium Hydroxide (CAS No. 1310-73-2)\n\n**Section 4: First-Aid Meas'...
+
+### `[EMAIL]`
+- `nemotron-en-3948a9f314db4d8186753474ec70e01d` [regex] value=`ronald_heller@gmail.com`  context: ...'el free to reach out to us at ronald_heller@gmail.com.\n\nWe appreciate your continue'...
+
+### `[IP]`
+- `nemotron-en-abc4329aea15472ab44fe57a9fdd4499` [regex] value=`255.255.255.0`  context: ...'   |\n| Subnet Mask          | 255.255.255.0                              '...
+- `nemotron-en-abc4329aea15472ab44fe57a9fdd4499` [regex] value=`186.154.22.1`  context: ...'   |\n| Gateway              | 186.154.22.1                              '...
+- `nemotron-en-abc4329aea15472ab44fe57a9fdd4499` [regex] value=`8.8.8.8`  context: ...'   |\n| DNS Servers          | 8.8.8.8, 8.8.4.4                     '...
+- `nemotron-en-abc4329aea15472ab44fe57a9fdd4499` [regex] value=`8.8.4.4`  context: ...'S Servers          | 8.8.8.8, 8.8.4.4                              '...
+- `nemotron-en-a79210f88f45466e84c0f66d4c25982b` [regex] value=`192.168.1.0/24`  context: ...'    |\n| **Source IP**       | 192.168.1.0/24                              '...
+
+### `[LICENSE_PLATE]`
+- `nemotron-en-d18516bfbd854c44a6811448d3dad6ae` [regex] value=`INC2023`  context: ...' Report\n\n**Incident Number:** INC2023-0092\n\n**Date and Time of Outa'...
+
+### `[PERSONAL_ID]`
+- `nemotron-en-8a34e93c9ef74f6a8661077513dffda7` [regex] value=`123-89-7562`  context: ...'____\n- Medical Record Number: 123-89-7562\n- Health Plan Beneficiary Num'...
+- `nemotron-en-52ad7c026564419f94a3919d0a1f7770` [regex] value=`004-52-7319`  context: ...'he certificate license number 004-52-7319 and covers the period from 15'...
+
+### `[PERSON_NAME]`
+- `nemotron-en-931a0d9108fa4049b5c9b004fa88ea17` [opf] value=`Hartford & Associates`  context: ...'ndemnity Agreement is between Hartford & Associates and Nelida Pendola. The indem'...
+- `nemotron-en-4ac284c894874af5a87319025ed67d05` [opf] value=`sony.mendez`  context: ...' our media relations contact, sony.mendez.'...
+- `nemotron-en-c5111e01dcd5413ba104399f591762ec` [opf] value=`t.perez`  context: ...'eement") is between the user, t.perez, and the organization, effect'...
+- `nemotron-en-36e8541756384a0d8230b9807d2f4d0b` [opf] value=`AmyDikesXx`  context: ...'ach out to me via my username AmyDikesXx for any discussions or debate'...
+- `nemotron-en-75a56163691b419ab4b0a59e631dedbd` [opf] value=`LexLabs Legal`  context: ...' number of IL-ENG-152934, and LexLabs Legal. The consideration for this c'...
+
+### `[PHONE]`
+- `nemotron-en-aa68de98f33149b08b231a63a9dc0c6c` [regex] value=`0004382965`  context: ...'plan beneficiary number is PA-0004382965.'...
+- `nemotron-en-31ee8fd013e4445d83d6f15169f76ba7` [regex] value=`0004372819`  context: ...'le. The medical record number 0004372819 was assigned to track the pro'...
+- `nemotron-en-722a4838747845dfa1fe6eb666ac9372` [regex] value=`0008374925`  context: ...'for the medical record number 0008374925. The event was logged at 7:22'...
+- `nemotron-en-aa44bfd07cd340b788cf70f3dcae7dc6` [regex] value=`7256198345`  context: ...' the biometric identifier BIO-7256198345.'...
+- `nemotron-en-4d8c14613e2b489688b54575a26d515b` [regex] value=`479-772-7297`  context: ...'rison & Associates via fax at 479-772-7297.'...
+
+### `[STREET_ADDRESS]`
+- `nemotron-en-be58d1eb7bae4f0e842015a0bb13f12d` [opf] value=`186 CVV 186`  context: ...'nstruction Group | 50381264 | 186 CVV 186 |\n| Biometric Identifier: D74'...
+
+
+## False-negative samples
+
+### `[DATE]`
+- `nemotron-en-31a4c4b49a934909b73effcc79ee5d98` value=`November 15, 2023`  context: ...'se schedule is as follows:\n\n- November 15, 2023: Introduction to Childcare Ad'...
+- `nemotron-en-31a4c4b49a934909b73effcc79ee5d98` value=`November 22, 2023`  context: ...'to Childcare Administration\n- November 22, 2023: Management and Leadership in'...
+- `nemotron-en-31a4c4b49a934909b73effcc79ee5d98` value=`November 29, 2023`  context: ...'and Leadership in Childcare\n- November 29, 2023: Curriculum Development and I'...
+- `nemotron-en-31a4c4b49a934909b73effcc79ee5d98` value=`December 6, 2023`  context: ...'elopment and Implementation\n- December 6, 2023: Policy and Regulation in Chi'...
+- `nemotron-en-31a4c4b49a934909b73effcc79ee5d98` value=`December 15, 2023`  context: ...'89, the course instructor, on December 15, 2023. Students can contact the ins'...
+
+### `[IP]`
+- `nemotron-en-d204231bd08a4f0896ce5cd125b79465` value=`12.34.56.78`  context: ...'k5. The VPN server address is 12.34.56.78. Please use the employee ID 2'...
+- `nemotron-en-af7ed3546c51490ca73bf41dfe68b110` value=`46.12.87.215`  context: ...'d on servers with the **ipv4: 46.12.87.215**. This includes databases, a'...
+- `nemotron-en-a4c0156075854d07a985c8f59d7a0663` value=`17.23.22.90`  context: ...'ssociated with the device was 17.23.22.90. The identity verification pr'...
+- `nemotron-en-7a4db7b725024c29af044facd33f2c15` value=`18.22.22.210`  context: ...'verage response time for IPV4 18.22.22.210.                             '...
+- `nemotron-en-7a4db7b725024c29af044facd33f2c15` value=`18.22.22.210`  context: ...'dflare.com\n- Primary IP: IPV4 18.22.22.210'...
+
+### `[LICENSE_PLATE]`
+- `nemotron-en-5d036b03b45e4e79b40f258943042bd3` value=`V4H-729`  context: ...'ust display the license plate V4H-729.\n\nAll heavy machinery must be'...
+- `nemotron-en-8ea21944f6034d63802aa5cac41ec267` value=`3LKP782`  context: ...' materials. The license plate 3LKP782 on the transport vehicle must'...
+- `nemotron-en-59632ab5153247839ab5a22263707e51` value=`972 KQ 43`  context: ...'tails:**\n- **License Plate:** 972 KQ 43\n\n**Accident Description:**\n- '...
+- `nemotron-en-59632ab5153247839ab5a22263707e51` value=`972 KQ 43`  context: ...'ved has the **license plate** 972 KQ 43.'...
+- `nemotron-en-72332c7e8401465885a288cb0b4fb679` value=`F47KJ`  context: ...'1J57K231459 and license plate F47KJ. The loan amount is $25,000 w'...
+
+### `[PERSON_NAME]`
+- `nemotron-en-5344e719fbb24d86bbb80212eabfbab2` value=`Elisabeth Setzer`  context: ...'ndation and Elisabeth Setzer. Elisabeth Setzer can be reached at elisabeth.s'...
+- `nemotron-en-b14d448095564ce995565cddf2e2f05b` value=`Guillermo Moreno`  context: ...'s degree, has been conducted. Guillermo Moreno can be reached at gmoreno@gma'...
+- `nemotron-en-b14d448095564ce995565cddf2e2f05b` value=`Guillermo Moreno`  context: ..." The rater comments highlight Guillermo Moreno's effective use of instructio"...
+- `nemotron-en-b14d448095564ce995565cddf2e2f05b` value=`Guillermo Moreno`  context: ...'ement. Both the evaluator and Guillermo Moreno have signed off on the evalua'...
+- `nemotron-en-931a0d9108fa4049b5c9b004fa88ea17` value=`Nelida Pendola`  context: ...'demnity clause specifies that Nelida Pendola will indemnify Hartford & Ass'...
+
+### `[SECRET]`
+- `nemotron-en-d204231bd08a4f0896ce5cd125b79465` value=`G9t$fR2mXk5`  context: ...'axaben_coder. The password is G9t$fR2mXk5. The VPN server address is 12'...
+- `nemotron-en-b30a384018af4fb6a7d490a9a88ae8c8` value=`Michael1995`  context: ...'el.milliner. Your password is Michael1995.\n\n3. Once logged in, you will'...
+- `nemotron-en-94c56d76eb244537971a57a72fe78bc2` value=`River77!`  context: ...'effectiveness of our password River77! and make adjustments as neede'...
+- `nemotron-en-7436f7124c7440d38c3ab0a405b8eb37` value=`d4a6b9c1-3e2f-4f1a-a76d-3a8c9b1d2e3f`  context: ...'taTech Solutions. The api key d4a6b9c1-3e2f-4f1a-a76d-3a8c9b1d2e3f is provided for authenticatio'...
+- `nemotron-en-7436f7124c7440d38c3ab0a405b8eb37` value=`d4a6b9c1-3e2f-4f1a-a76d-3a8c9b1d2e3f`  context: ...'s not to disclose the api key d4a6b9c1-3e2f-4f1a-a76d-3a8c9b1d2e3f to any third party, including'...
+
+### `[STREET_ADDRESS]`
+- `nemotron-en-fc306c761d374f9080512075154e49aa` value=`60 School St`  context: ...'**\n\n- **Origin Address**:\n  - 60 School St\n\n- **Destination Coordinates*'...
+- `nemotron-en-028470127abe4e1aafaa867d36596e71` value=`367 Duvall Valley Road North`  context: ...'-1245. The patient resides at 367 Duvall Valley Road North.  He is a Muslim.'...
+- `nemotron-en-b790d953ae9c4bfcaad05b2ec90db29a` value=`116 Lander St NW`  context: ...'lling.\n\n**Property Address:**\n116 Lander St NW\n\n**Zoning Information:**\n\nThe'...
+- `nemotron-en-ae15fc773f924deb9db759aa6b0a957c` value=`166 N Bottle Brush Ave`  context: ...'ormation**\n- Name:\n- Address: 166 N Bottle Brush Ave\n- Contact Details: Phone: 725'...
+- `nemotron-en-ae15fc773f924deb9db759aa6b0a957c` value=`166 N Bottle Brush Ave`  context: ...'etermined\n- Delivery Address: 166 N Bottle Brush Ave\n- Contact Person: Phone: 725-'...
+

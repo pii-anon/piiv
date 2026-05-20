@@ -1,0 +1,139 @@
+{
+  "dataset_size": 309,
+  "language_filter": "all",
+  "bucket_filter": "",
+  "rows": [
+    {
+      "name": "regex_llm",
+      "requested_mode": "llm",
+      "opf_model": "",
+      "n_queries": 309,
+      "total_s": 97.3910843343474,
+      "detector_total_s": 97.22085954574868,
+      "status": "ok",
+      "routing_decisions": {},
+      "macro_precision": 0.7168422753716871,
+      "macro_recall": 0.6721861471861471,
+      "micro_precision": 0.8695652173913043,
+      "micro_recall": 0.7692307692307693,
+      "tp": 240,
+      "fp": 36,
+      "fn": 72,
+      "support": 312,
+      "per_placeholder": {
+        "[CARD]": {
+          "precision": 0.96,
+          "recall": 1.0,
+          "tp": 24,
+          "fp": 1,
+          "fn": 0,
+          "support": 24
+        },
+        "[DATE]": {
+          "precision": 0.16666666666666666,
+          "recall": 1.0,
+          "tp": 3,
+          "fp": 15,
+          "fn": 0,
+          "support": 3
+        },
+        "[DE_STEUER_ID]": {
+          "precision": 0.0,
+          "recall": 0.0,
+          "tp": 0,
+          "fp": 0,
+          "fn": 9,
+          "support": 9
+        },
+        "[EMAIL]": {
+          "precision": 1.0,
+          "recall": 1.0,
+          "tp": 78,
+          "fp": 0,
+          "fn": 0,
+          "support": 78
+        },
+        "[IBAN]": {
+          "precision": 1.0,
+          "recall": 1.0,
+          "tp": 3,
+          "fp": 0,
+          "fn": 0,
+          "support": 3
+        },
+        "[IP]": {
+          "precision": 1.0,
+          "recall": 1.0,
+          "tp": 3,
+          "fp": 0,
+          "fn": 0,
+          "support": 3
+        },
+        "[LICENSE_PLATE]": {
+          "precision": 1.0,
+          "recall": 0.3333333333333333,
+          "tp": 1,
+          "fp": 0,
+          "fn": 2,
+          "support": 3
+        },
+        "[PERSONAL_ID]": {
+          "precision": 0.0,
+          "recall": 0.0,
+          "tp": 0,
+          "fp": 0,
+          "fn": 10,
+          "support": 10
+        },
+        "[PERSON_NAME]": {
+          "precision": 0.8846153846153846,
+          "recall": 0.7666666666666667,
+          "tp": 23,
+          "fp": 3,
+          "fn": 7,
+          "support": 30
+        },
+        "[PHONE]": {
+          "precision": 0.9411764705882353,
+          "recall": 0.7272727272727273,
+          "tp": 96,
+          "fp": 6,
+          "fn": 36,
+          "support": 132
+        },
+        "[RU_SNILS]": {
+          "precision": 1.0,
+          "recall": 0.25,
+          "tp": 2,
+          "fp": 0,
+          "fn": 6,
+          "support": 8
+        },
+        "[STREET_ADDRESS]": {
+          "precision": 0.08333333333333333,
+          "recall": 0.3333333333333333,
+          "tp": 1,
+          "fp": 11,
+          "fn": 2,
+          "support": 3
+        },
+        "[URL]": {
+          "precision": 1.0,
+          "recall": 1.0,
+          "tp": 3,
+          "fp": 0,
+          "fn": 0,
+          "support": 3
+        },
+        "[VIN]": {
+          "precision": 1.0,
+          "recall": 1.0,
+          "tp": 3,
+          "fp": 0,
+          "fn": 0,
+          "support": 3
+        }
+      }
+    }
+  ]
+}

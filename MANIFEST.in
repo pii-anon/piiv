@@ -1,0 +1,5 @@
+include LICENSE README.md pyproject.toml
+recursive-include tests *.py
+recursive-include benchmarks *.py *.md
+recursive-exclude benchmarks/pii_evaluation/results *
+recursive-exclude . __pycache__ *.py[cod] .DS_Store
